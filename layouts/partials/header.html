@@ -27,3 +27,8 @@
 
   <link rel="icon" type="image/png" href="{{ $favicon }}" />
 {{end}}
+
+<!--================= math-typesetting ===================-->
+{{ if .Params.math }}
+  {{ partial "helpers/add-math-typesetting.html" . }}
+{{ end }}
